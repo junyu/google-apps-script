@@ -26,3 +26,17 @@ This script uses Feedbin API to download allentries the user subscribes to, and 
 9. You could watch the entries fill up your spreadsheet... If the script "exceeds execution time", go to "View" -> "Logs" to see the progress.  Just copy the numbers in last two logs to Line 22 (`page`) and Line 23 (`total`), and repeat step 8 again.
 10. After you fetch enough entries, switch to `markAsUnread` in the "Function" dropdown, and click "Run".
 11. You should have marked all entries as unread in Feedbin now.
+
+## Fetch Weibo Repost
+
+This script uses Weibo API to fetch all repost for a given Weibo to Sheet.
+
+1. Create a new Google Sheet at [https://sheets.google.com], then rename the first sheet as `Statuses`.
+2. Figure out your Weibo `access_token` and the Weibo ID you want to fetch.  So easy as Weibo has excellent documentation.
+3. "Tools" -> "Script Editor";
+4. Choose "Blank Project", and paste `fetch-weibo-repost.gs` into the IDS.
+5. "File" -> "Project properties", then "Script Properties".
+6. Create an entry: `access_token`, and put in your access token.
+7. Change line 11 to the ID you want to fetch.
+8. In the toolbar, select `fetch` in the "Function" dropdown, click "Run", and follow the authorization process if first time run.
+9. Just wait.
