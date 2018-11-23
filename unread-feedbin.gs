@@ -7,8 +7,15 @@ username: Your username at Feedbin. Should be an email address.
 password: Your password.
   
 ## Prepare spreadsheet:
-  1. Long enough
-  2. Have header like this: id, feed_id, title, url, author, published, created_at
+  1. Name first Sheet as "Entries";
+  2. Long enough
+  3. Have header like this: id, feed_id, title, url, author, published, created_at
+  
+## Instructions
+
+  1. Run "fetch";
+  2. Keep rows that you want to mark as unread
+  3. Run "markAsUnread"
   
 ## Timeout
 
